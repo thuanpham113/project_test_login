@@ -1,0 +1,60 @@
+<div>
+    <div class="login flex align-center justify-center items-center bg-[url('/images/login-yyyy.webp')] bg-cover" style="height: 100vh; width: 100vw;">
+        <div class="login__container border p-9 w-80 flex flex-col justify-center border-white" style="border-radius: 50px !important;">
+            <div class="login__title text-center font-bold text-white text-4xl pt-8 pb-12">Boostech System</div>
+            <mat-card-content style="padding: 0;">
+                <mat-form-field class="relative py-2 w-full">
+                    <input matInput type="text" placeholder="Enter your email" [(ngModel)]="email"/>
+                    <mat-icon matPrefix outline class="material-icons-outlined" >mail</mat-icon>
+                </mat-form-field>
+                <mat-form-field class="relative py-2 w-full">
+                    <input matInput type="password" placeholder="Enter your password" [(ngModel)]="password"/>
+                    <mat-icon matPrefix class="material-icons-outlined">lock</mat-icon>
+                </mat-form-field>
+                <div class="flex justify-center pt-8 pb-7">
+                    <button mat-flat-button style="padding-left: 100px; padding-right: 100px; background-color: #0A84FF;"(click)="login()">Login</button>
+                </div>
+            </mat-card-content>
+        </div>
+
+        <!-- <div class="login__container border rounded-3xl w-80 p-4" style="backdrop-filter: blur(10px);">
+            <div class="login__header">
+                <div class="login__title text-center font-bold text-white text-2xl py-5">Boostech System</div>
+            </div>
+
+            <div class="login__body">
+                <div class="login__form">
+                    <div class="relative py-2">
+                        <input type="text"
+                            class="pl-10 pr-4 py-2 border rounded-lg w-full"
+                            placeholder="Enter your email" />
+                        <div class="absolute inset-y-0 left-0 pl-3
+                            flex items-center
+                            pointer-events-none"
+                        >
+                            <span class="material-icons-outlined">mail</span>
+                        </div>
+                    </div>
+
+                    <div class="relative py-2">
+                        <input type="password"
+                            class="pl-10 pr-4 py-2 border rounded-lg w-full"
+                            placeholder="Enter your password" />
+                        <div class="absolute inset-y-0 left-0 pl-3
+                            flex items-center
+                            pointer-events-none"
+                        >
+                        <span class="material-icons-outlined">lock</span>
+                        </div>
+                    </div>
+                    <div class="login__form-group flex justify-center block">
+                        <button type="submit" class="login__button bg-blue-500 hover:bg-blue-700 text-white rounded-full focus:outline-none focus:shadow-outline m-auto px-16 py-2 my-5" >Login</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+</div>
+
+
