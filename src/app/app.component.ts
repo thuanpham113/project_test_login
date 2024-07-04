@@ -13,5 +13,4 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 })
 export class AppComponent {
   title = 'project_test_login';
-faCoffee: any;
 }

@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { LoginCombackComponent } from './login-comback/login-comback.component';
 import { NgModule } from '@angular/core';
+import { MaterialRequestComponent } from './material-request/material-request.component';
 
 export const routes: Routes = [
     {
@@ -16,7 +17,11 @@ export const routes: Routes = [
         path: '',
         redirectTo: '/login',
         pathMatch: 'full'
-    }
+    },
+    {
+        path: 'material',
+        component: MaterialRequestComponent
+    },
 ];
 
 @NgModule({

@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>New Material Request Project {{ projectId }}</h2>
+<mat-dialog-content>
+  <mat-form-field class="w-full">
+    <mat-label>Project</mat-label>
+    <input matInput [(ngModel)]="projectId" disabled />
+  </mat-form-field>
+  <mat-form-field class="w-full">
+    <mat-label>RequestBy</mat-label>
+    <input matInput [(ngModel)]="requestedBy" disabled />
+  </mat-form-field>
+  <mat-form-field class="w-full">
+    <mat-label>Warehouse</mat-label>
+    <mat-select [(ngModel)]="warehouseId">
+      @for (warehouse of warehouseSelect; track warehouse) {
+        <mat-option [value]="warehouse">{{warehouse}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="w-full">
+    <mat-label>Description</mat-label>
+    <input matInput [(ngModel)]="description" />
+  </mat-form-field>
+  <div>
+    <button mat-button>Create Item</button>
+    <button mat-button>Select Item</button>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button cdkFocusInitial (click)="onClick()">Submit</button>
+</mat-dialog-actions>
